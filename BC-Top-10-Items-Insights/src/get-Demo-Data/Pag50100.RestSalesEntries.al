@@ -83,6 +83,26 @@ page 50100 "AIR RestSalesEntries"
                     if FindFirst then;
                 end;
             }
+
+            action("AIR Get Top10 Insights")
+            {
+                ApplicationArea = Basic;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                Caption = 'Top 10 Items';
+                ToolTip = 'Get Top 10 Items in Top 10 Sales Days with the power of Python Azure Functions';
+                Image = Sales;
+                trigger OnAction();
+                var
+                    InsightsMgt: Codeunit "AIR Insights Mgt.";
+                begin
+                    InsightsMgt.GetTop10ItemsInsight();
+                end;
+
+            }
         }
     }
+
+
 }

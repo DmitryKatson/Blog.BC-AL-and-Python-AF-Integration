@@ -3,5 +3,6 @@
     "azureFunctions.pythonVenv": ".env",
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~2",
-    "azureFunctions.preDeployTask": "func: pack"
+    "azureFunctions.preDeployTask": "func: pack",
+    "python.pythonPath": ".env/bin/python3.6"
 }

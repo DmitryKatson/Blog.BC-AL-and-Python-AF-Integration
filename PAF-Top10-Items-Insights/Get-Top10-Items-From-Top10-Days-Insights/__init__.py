@@ -48,7 +48,7 @@ def GetTop10ItemsInsight(dataframe1 = None):
     sales_top_days = sales[sales.date.isin(top_days.date)]
 
     # Get TOP 10 Items best selling in these days
-    sales_top_items = sales_top_days.groupby(['menu_item'])['orders'].sum().nlargest(10)
+    sales_top_items = sales_top_days.groupby(['menu_item'])['orders'].sum().nlargest(10).reset_index()
     
     # Return value must be of a sequence of pandas.DataFrame
     return sales_top_items
