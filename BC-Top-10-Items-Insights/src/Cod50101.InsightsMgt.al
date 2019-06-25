@@ -48,7 +48,7 @@ codeunit 50101 "AIR Insights Mgt."
         Jobj.Add(dataSetLabel, Jarr);
     end;
 
-    local procedure SendRequestAndGetResponse(SalesTransactionsJson: Text; InsightsJson: Text)
+    local procedure SendRequestAndGetResponse(SalesTransactionsJson: Text; var InsightsJson: Text)
     var
         RequestMessage: HttpRequestMessage;
         RequestContent: HttpContent;
@@ -61,10 +61,6 @@ codeunit 50101 "AIR Insights Mgt."
         RequestMessage.Content := RequestContent;
         Client.Send(RequestMessage, ResponseMessage);
         ResponseMessage.Content.ReadAs(InsightsJson);
-
-        Message(SalesTransactionsJson);
-        Message(InsightsJson);
-
     end;
 
     local procedure GetAzureFunctionUri(): Text
