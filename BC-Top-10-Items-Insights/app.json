@@ -1,0 +1,26 @@
+{
+  "id": "b481770b-f171-43c3-978f-2fe816bcdb23",
+  "name": "Top 10 Items Insights",
+  "publisher": "Dmitry Katson",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://BC-Top-10-Items-Insights.com/help/",
+  "showMyCode": true,
+  "runtime": "3.0"
+}
