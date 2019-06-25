@@ -1,0 +1,6 @@
+POST https://bc-get-top10-items-from-top10-days-insights-blog.azurewebsites.net/api/Get-Top10-Items-From-Top10-Days-Insights
+content-type: application/json
+
+{
+    "sales":[{"date":"2015-01-10","menu_item":"Biscuit Tortoni","orders":65.0},{"date":"2015-01-10","menu_item":"Blue Point Oysters","orders":82.0},{"date":"2015-01-10","menu_item":"Dessert","orders":119.0},{"date":"2015-01-10","menu_item":"French fried potatoes","orders":45.0},{"date":"2015-01-10","menu_item":"Fruit","orders":58.0},{"date":"2015-01-10","menu_item":"Grapes","orders":173.0},{"date":"2015-01-10","menu_item":"Milk","orders":147.0},{"date":"2015-01-10","menu_item":"Nesselrode Pudding","orders":33.0},{"date":"2015-01-10","menu_item":"Orange Juice","orders":85.0},{"date":"2015-01-10","menu_item":"Orange marmalade","orders":56.0},{"date":"2015-01-10","menu_item":"Oranges","orders":113.0},{"date":"2015-01-10","menu_item":"Oyster cocktail","orders":87.0},{"date":"2015-01-10","menu_item":"Boiled eggs","orders":146.0},{"date":"2015-01-10","menu_item":"Pear","orders":113.0},{"date":"2015-01-10","menu_item":"Plums","orders":26.0},{"date":"2015-01-10","menu_item":"ROQUEFORT CHEESE","orders":113.0}]
+}

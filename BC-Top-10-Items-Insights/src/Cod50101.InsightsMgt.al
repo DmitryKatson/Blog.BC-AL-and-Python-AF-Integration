@@ -61,6 +61,10 @@ codeunit 50101 "AIR Insights Mgt."
         RequestMessage.Content := RequestContent;
         Client.Send(RequestMessage, ResponseMessage);
         ResponseMessage.Content.ReadAs(InsightsJson);
+
+        Message(SalesTransactionsJson);
+        Message(InsightsJson);
+
     end;
 
     local procedure GetAzureFunctionUri(): Text
