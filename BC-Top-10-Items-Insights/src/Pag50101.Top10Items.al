@@ -5,6 +5,7 @@ page 50101 "AIR Top 10 Items"
     UsageCategory = Lists;
     SourceTable = "Top Customers By Sales Buffer";
     Caption = 'Top 10 Items';
+    Editable = false;
 
     layout
     {
